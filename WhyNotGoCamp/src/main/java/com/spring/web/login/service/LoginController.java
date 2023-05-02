@@ -73,7 +73,6 @@ public class LoginController {
 				return map;
 			}
 			case "ROLE_ADMIN": {
-				log.info("일로오나");
 				String adnum =  user.getUsername();
 				String nickname = svc.getNicknameByadmin(Integer.valueOf(adnum));
 				session.setAttribute("nickname", nickname);
